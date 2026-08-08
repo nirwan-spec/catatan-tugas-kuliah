@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Catatan Kuliah - To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 Catatan Tugas Kuliah</h1>
+
+        <!-- Form tambah tugas -->
+        <form id="formTugas">
+            <input type="text" id="judul" placeholder="Judul tugas" required>
+            <input type="text" id="mata_kuliah" placeholder="Mata kuliah" required>
+            <input type="date" id="deadline" required>
+            <button type="submit">Tambah Tugas</button>
+        </form>
+            <!-- Filter mata kuliah -->
+            <div class="filter-bar">
+                <select id="filterMataKuliah">
+                    <option value="semua">Semua Mata Kuliah</option>
+                </select>
+            </div>
+
+            <!-- List tugas -->
+            <div id="listTugas"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
